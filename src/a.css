@@ -1,8 +1,20 @@
-/* 全体のスタイル */
+/* コンテナのスタイル */
 .container {
-  text-align: center;
-  font-family: Arial, sans-serif;
-  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;  /* 画面全体の高さ */
+  text-align: center;  /* 文字を中央揃え */
+  transition: all 1s ease;  /* 移動のアニメーション */
+}
+
+/* `centered` クラスがついているときに中央配置 */
+.container.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* ボタンのスタイル */
@@ -28,9 +40,17 @@ p {
   color: #333;
 }
 
+/* 画像のスタイル */
+img {
+  width: 300px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
 /* フッターのスタイル */
 footer {
   margin-top: 40px;
   font-size: 14px;
   color: #777;
 }
+
