@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+export default function App() {
 
 const omikujiResults = [
   "大吉",
@@ -39,4 +39,4 @@ const App = () => {
   );
 };
 
-export default App;
+}
