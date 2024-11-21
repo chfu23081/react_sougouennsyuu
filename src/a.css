@@ -1,0 +1,36 @@
+/* 全体のスタイル */
+.container {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin-top: 50px;
+}
+
+/* ボタンのスタイル */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #f0ad4e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+button:disabled {
+  background-color: #d9534f;
+}
+
+/* 結果表示のスタイル */
+p {
+  font-size: 18px;
+  margin-top: 20px;
+  color: #333;
+}
+
+/* フッターのスタイル */
+footer {
+  margin-top: 40px;
+  font-size: 14px;
+  color: #777;
+}
