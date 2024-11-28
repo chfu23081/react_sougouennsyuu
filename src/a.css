@@ -1,11 +1,13 @@
 /* コンテナのスタイル */
 .container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 100vh;  /* 画面全体の高さ */
-  text-align: center;  /* 文字を中央揃え */
+  flex-direction: column; /* 要素を縦に並べる */
+  align-items: center; /* 横方向に中央揃え */
+  justify-content: center; /* 縦方向に中央揃え */
+  min-height: 100vh; /* 画面全体を利用 */
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
   transition: all 1s ease;  /* 移動のアニメーション */
 }
 
@@ -42,9 +44,10 @@ p {
 
 /* 画像のスタイル */
 img {
-  width: 300px;
-  margin-top: 20px;
-  border-radius: 10px;
+  max-width: 100%;  /* 横幅は親要素に収まる */
+  max-height: 300px;  /* 高さを300pxに制限 */
+  display: block;  /* 画像をブロック要素に */
+  margin: 20px auto;  /* 画像を中央揃え */
 }
 
 /* フッターのスタイル */
