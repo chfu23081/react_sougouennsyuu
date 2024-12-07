@@ -53,8 +53,8 @@ const App = () => {
       {result && <p>結果: {result}</p>}
       {dogImage && <img src={dogImage} alt="犬の画像" />}
       <footer>
-        <p>氏名: [自分の名前]</p>
-        <p>学生証番号: [学生証番号]</p>
+        <p>氏名: [小原楓雅]</p>
+        <p>学生証番号: [5423081]</p>
         <p>日本大学文理学部情報科学科 Webプログラミングの演習課題</p>
       </footer>
     </div>
